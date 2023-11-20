@@ -12,7 +12,7 @@ import types
 # Load your data using st.cache_data
 @st.cache_data(hash_funcs={types.FunctionType: lambda _: None})
 def load_data():
-    data = pd.read_csv('C:/Users/dell/Downloads/world-university-ranking-cleaned-dataset/Preprocessed World University Rankings 2023 Dataset.csv')
+    data = pd.read_csv('Preprocessed World University Rankings 2023 Dataset.csv')
     # Ensure the columns are numeric and drop NaNs
     data['No of student per staff'] = pd.to_numeric(data['No of student per staff'], errors='coerce')
     data['University Rank'] = pd.to_numeric(data['University Rank'], errors='coerce')
