@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
 
 
 import streamlit as st
@@ -53,8 +52,6 @@ st.pyplot(plt)
 st.subheader('Data Subset View')
 st.dataframe(data.head())  # Change .head() to display a different subset
 
-
-# In[ ]:
 
 
 
